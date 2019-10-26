@@ -2,7 +2,8 @@ from getpass import getpass # безопасный input
 import sys # работа с системными функциями, будет использована для корректного завершения работы
 
 from webapp import create_app
-from webapp.model import db, User
+from webapp.db import db
+from webapp.user.models import User
 
 app = create_app()
 
